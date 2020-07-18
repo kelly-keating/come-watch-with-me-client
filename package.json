@@ -1,0 +1,45 @@
+{
+  "name": "cwwm-client",
+  "scripts": {
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "webpack --watch",
+    "dev:server": "nodemon server",
+    "start": "node server"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "npm-run-all": "^4.1.5",
+    "react-player": "^2.5.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "socket.io": "^2.3.0",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^25.3.0",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

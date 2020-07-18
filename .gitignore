@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# Webpack bundles
+bundle.*
+
+# Development databases
+dev.sqlite3
+
+# Video files // too large to travel via git
+*.avi
+*.flv
+*.m4v
+*.mkv
+*.mp4
+*.webm
+
