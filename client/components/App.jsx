@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import io from 'socket.io-client'
 
 import VideoPlayer from './VideoPlayer'
+import FilePicker from './FilePicker'
 
 import { play, pause } from '../actions'
 
@@ -52,6 +53,7 @@ class App extends React.Component {
           HI :D - {this.props.playing ? 'PAUSE' : 'PLAY'}
         </h1>
         <VideoPlayer />
+        <FilePicker />
       </>
     )
   }

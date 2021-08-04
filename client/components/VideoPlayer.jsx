@@ -5,10 +5,14 @@ import { connect } from 'react-redux'
 
 class VideoPlayer extends React.Component {
 
+  renderVideo = () => {
+    return <ReactPlayer className="player" playing={this.props.playing} url={"videos/" + this.props.video} />
+  }
+
   render () {
     return <>
       <h2>VIDEO</h2>
-      <ReactPlayer playing={this.props.playing} url={this.props.video} />
+      {this.props.video && this.renderVideo()}
     </>
   }
 }
